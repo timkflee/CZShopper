@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">shopper-data</string>
+    <string name="shopper_db">SHOPPER_DB</string>
+    <string name="item_created">Item created.</string>
+    <string name="item_deleted">Item deleted.</string>
+    <string name="item_updated">Item updated.</string>
+    <string name="item_create_failed">Failed to create item.</string>
+    <string name="item_delete_failed">Failed to delete item.</string>
+    <string name="item_update_failed">Failed to edit item.</string>
+</resources>

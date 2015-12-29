@@ -1,0 +1,2 @@
+include ':app', ':shopper-rest', ':shopper-data'
+include ':daoshoppergenerator'

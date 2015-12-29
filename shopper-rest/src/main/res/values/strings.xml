@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">shopper-rest</string>
+    <string name="network_issue">There is a problem with your network.</string>
+</resources>
