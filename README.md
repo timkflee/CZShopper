@@ -1,10 +1,5 @@
 # CZShopper
-OpenSource Libraries:
-Retrofit
-OkHttp
-logansquare
-greenrobot Eventbus
-greenDAO ORM
+OpenSource Libraries: Retrofit, OkHttp, logansquare, greenrobot Eventbus, greenDAO ORM
 
 
 Retrofit/OkHttp
