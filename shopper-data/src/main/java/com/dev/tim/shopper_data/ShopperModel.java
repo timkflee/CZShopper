@@ -53,7 +53,6 @@ public class ShopperModel {
             if (!localItems.isEmpty())
                 bus.post(new RequestEvent(localItems));
 
-
             // Request for Server Data
             ShopperModel.this.getServerData();
         }
@@ -90,14 +89,24 @@ public class ShopperModel {
         }
     }
 
+    /**
+     * Get items from database and server
+     */
     public void getAllItems() {
         mExecutor.execute(new ShopRequestRunnable());
     }
 
+    /**
+     * Get items from server
+     */
     public void getServerItems() {
         mExecutor.execute(new ShopServerRequestRunnable());
     }
 
+
+    /**
+     * Add Item Task
+     */
     private class ItemAddRequestRunnable implements Runnable {
 
         private AddRequestBody body;
@@ -131,6 +140,10 @@ public class ShopperModel {
         mExecutor.execute(new ItemAddRequestRunnable(name, category));
     }
 
+
+    /**
+     * Edit Item Task
+     */
     private class ItemEditRequestRunnable implements Runnable {
         private AddRequestBody body;
         private long id;
@@ -163,6 +176,9 @@ public class ShopperModel {
         mExecutor.execute(new ItemEditRequestRunnable(id, name, category));
     }
 
+    /**
+     * Delete Item Task
+     */
     private class ItemDeleteRequestRunnable implements Runnable {
 
         private long id;
